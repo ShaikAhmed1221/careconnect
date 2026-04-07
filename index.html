@@ -1,0 +1,1040 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareConnect – Healthcare Support Portal</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ══════════════ NAV ══════════════ -->
+    <nav id="navbar">
+      <div class="nav-logo">
+        <div class="pulse-dot"></div>
+        CareConnect
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#register">Register</a>
+        <a href="#ai-chat">AI Assistant</a>
+        <a href="#impact">Impact</a>
+        <a href="#about">About</a>
+        <a href="#contact-sec">Contact</a>
+      </div>
+      <button class="nav-cta" onclick="scrollTo('register')">
+        Get Involved
+      </button>
+      <button
+        class="hamburger"
+        id="hamburger"
+        onclick="toggleMenu()"
+        aria-label="Toggle menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section class="hero" id="home">
+      <div class="hero-bg-circle c1"></div>
+      <div class="hero-bg-circle c2"></div>
+      <div class="hero-left">
+        <div class="hero-tag">🌿 Healthcare NGO Support Platform</div>
+        <h1>Connecting <em>Care</em><br />with Community</h1>
+        <p>
+          CareConnect bridges patients, volunteers, and healthcare providers
+          across underserved communities. Register for support, volunteer your
+          skills, or get instant answers from our AI assistant — all in one
+          place.
+        </p>
+        <div class="hero-actions">
+          <a href="#register" class="btn-primary">Register Now →</a>
+          <a href="#ai-chat" class="btn-secondary">Talk to AI Assistant</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-icon">✓</span> Free of charge
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✓</span> Confidential
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✓</span> 24hr response
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="stats-card">
+          <div class="stats-header">
+            <span class="live-badge">● LIVE</span>
+            <span>Our Impact This Year</span>
+          </div>
+          <div class="stat-grid">
+            <div class="stat-item accent">
+              <div class="stat-num" data-target="2400">0</div>
+              <div class="stat-label">Patients Supported</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-target="380">0</div>
+              <div class="stat-label">Active Volunteers</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-target="12">0</div>
+              <div class="stat-label">Partner Clinics</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-target="94" data-suffix="%">0</div>
+              <div class="stat-label">Satisfaction Rate</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-target="6">0</div>
+              <div class="stat-label">Districts Covered</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-target="1800" data-suffix="+">0</div>
+              <div class="stat-label">Consultations Done</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ ANNOUNCEMENT TICKER ══════════════ -->
+    <div class="ticker-wrap">
+      <div class="ticker-track">
+        <span>🩺 Free health camp — Secunderabad Community Hall, May 12</span>
+        <span
+          >💊 Medication assistance now available for diabetes patients</span
+        >
+        <span>🤝 Volunteer drive open — join our growing team of 380+</span>
+        <span>🧠 Mental health helpline now available 7 days a week</span>
+        <span>📢 Partnership with Yashoda Hospitals signed for 2025</span>
+        <span>🩺 Free health camp — Secunderabad Community Hall, May 12</span>
+        <span
+          >💊 Medication assistance now available for diabetes patients</span
+        >
+        <span>🤝 Volunteer drive open — join our growing team of 380+</span>
+        <span>🧠 Mental health helpline now available 7 days a week</span>
+        <span>📢 Partnership with Yashoda Hospitals signed for 2025</span>
+      </div>
+    </div>
+
+    <!-- ══════════════ SERVICES ══════════════ -->
+    <section id="services" class="section-white">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">What We Offer</div>
+          <h2>Comprehensive Healthcare<br /><em>Support Services</em></h2>
+          <p>
+            From medical consultations to mental wellness — we cover the full
+            spectrum of community health needs.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card" style="--c: #1a6b4a">
+            <div class="service-icon">🩺</div>
+            <h3>Medical Consultation</h3>
+            <p>
+              Access qualified doctors and specialists through our partner
+              network of 12 clinics and 3 hospitals across Hyderabad.
+            </p>
+            <ul class="service-list">
+              <li>General physician consultations</li>
+              <li>Specialist referrals</li>
+              <li>Follow-up care coordination</li>
+            </ul>
+            <a href="#register" class="service-link">Request access →</a>
+          </div>
+          <div class="service-card" style="--c: #c9933a">
+            <div class="service-icon">💊</div>
+            <h3>Medication Assistance</h3>
+            <p>
+              We help patients who cannot afford essential medicines by
+              coordinating with pharmacies and donor networks.
+            </p>
+            <ul class="service-list">
+              <li>Chronic disease medication support</li>
+              <li>Post-surgery prescription aid</li>
+              <li>Monthly medicine delivery</li>
+            </ul>
+            <a href="#register" class="service-link">Apply now →</a>
+          </div>
+          <div class="service-card" style="--c: #2d6a9f">
+            <div class="service-icon">🧠</div>
+            <h3>Mental Health Support</h3>
+            <p>
+              Licensed counselors and psychologists available for free sessions,
+              especially for low-income households.
+            </p>
+            <ul class="service-list">
+              <li>1-on-1 counseling sessions</li>
+              <li>Group therapy programs</li>
+              <li>Crisis helpline (7 days)</li>
+            </ul>
+            <a href="#register" class="service-link">Get help →</a>
+          </div>
+          <div class="service-card" style="--c: #6b46a0">
+            <div class="service-icon">🚗</div>
+            <h3>Transport Assistance</h3>
+            <p>
+              We arrange free or subsidised transport to clinics for elderly,
+              disabled, and economically vulnerable patients.
+            </p>
+            <ul class="service-list">
+              <li>Ambulance coordination</li>
+              <li>Auto/cab scheduling</li>
+              <li>Wheelchair-accessible vehicles</li>
+            </ul>
+            <a href="#register" class="service-link">Book transport →</a>
+          </div>
+          <div class="service-card" style="--c: #b5451b">
+            <div class="service-icon">🏠</div>
+            <h3>Home Care Services</h3>
+            <p>
+              Trained home-care aides and nursing volunteers visit patients who
+              cannot travel for treatment.
+            </p>
+            <ul class="service-list">
+              <li>Post-op recovery care</li>
+              <li>Elder care support</li>
+              <li>Wound dressing & vitals monitoring</li>
+            </ul>
+            <a href="#register" class="service-link">Schedule a visit →</a>
+          </div>
+          <div class="service-card" style="--c: #1a6b4a">
+            <div class="service-icon">💰</div>
+            <h3>Financial Assistance</h3>
+            <p>
+              We connect patients with government schemes, NGO grants, and
+              donor-funded subsidy programmes.
+            </p>
+            <ul class="service-list">
+              <li>Arogyasri & Aarogyam linking</li>
+              <li>Emergency medical fund</li>
+              <li>Hospital bill negotiation</li>
+            </ul>
+            <a href="#register" class="service-link">Check eligibility →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ HOW IT WORKS ══════════════ -->
+    <section class="how-section">
+      <div class="container">
+        <div class="section-header light">
+          <div class="section-tag light">Simple Process</div>
+          <h2>How CareConnect Works</h2>
+          <p>Three simple steps to get the support you need.</p>
+        </div>
+        <div class="steps-row">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <div class="step-icon">📝</div>
+            <h3>Register</h3>
+            <p>
+              Fill out our quick patient support form. It takes less than 3
+              minutes.
+            </p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <div class="step-icon">📞</div>
+            <h3>Get Connected</h3>
+            <p>
+              A care coordinator contacts you within 24 hours to understand your
+              needs.
+            </p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <div class="step-icon">💚</div>
+            <h3>Receive Care</h3>
+            <p>
+              We match you with the right services, volunteers, and partner
+              clinics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ REGISTER ══════════════ -->
+    <section id="register" class="section-white">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Join Our Network</div>
+          <h2>Register with <em>CareConnect</em></h2>
+          <p>
+            Whether you need support or want to give it — there's a place for
+            you here.
+          </p>
+        </div>
+
+        <div class="tab-bar">
+          <button class="tab-btn active" onclick="switchTab('patient')">
+            🏥 Patient Support
+          </button>
+          <button class="tab-btn" onclick="switchTab('volunteer')">
+            🤝 Volunteer
+          </button>
+          <button class="tab-btn" onclick="switchTab('contact')">
+            ✉️ Contact Us
+          </button>
+        </div>
+
+        <!-- Patient Form -->
+        <div id="tab-patient" class="tab-panel active">
+          <div class="form-card">
+            <div class="form-card-header">
+              <h3>Patient Support Request</h3>
+              <p>
+                Fill out this form and our care team will reach out within 24
+                hours. All information is confidential.
+              </p>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label>First Name *</label
+                ><input type="text" id="p-fname" placeholder="Arjun" />
+              </div>
+              <div class="form-group">
+                <label>Last Name *</label
+                ><input type="text" id="p-lname" placeholder="Sharma" />
+              </div>
+              <div class="form-group">
+                <label>Age</label
+                ><input
+                  type="number"
+                  id="p-age"
+                  placeholder="34"
+                  min="0"
+                  max="120"
+                />
+              </div>
+              <div class="form-group">
+                <label>Gender</label>
+                <select id="p-gender">
+                  <option value="">Select...</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+                  <option>Prefer not to say</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Phone Number *</label
+                ><input type="tel" id="p-phone" placeholder="+91 98765 43210" />
+              </div>
+              <div class="form-group">
+                <label>Email Address</label
+                ><input
+                  type="email"
+                  id="p-email"
+                  placeholder="arjun@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label>City / District *</label
+                ><input type="text" id="p-city" placeholder="Hyderabad" />
+              </div>
+              <div class="form-group">
+                <label>Pincode</label
+                ><input type="text" id="p-pin" placeholder="500001" />
+              </div>
+              <div class="form-group full">
+                <label>Type of Support Needed *</label>
+                <select id="p-support">
+                  <option value="">Select support type...</option>
+                  <option>Medical Consultation Access</option>
+                  <option>Medication Assistance</option>
+                  <option>Mental Health Support</option>
+                  <option>Transportation to Clinic</option>
+                  <option>Home Care Services</option>
+                  <option>Financial Assistance</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label>Urgency Level</label>
+                <div class="radio-group">
+                  <label class="radio-label"
+                    ><input
+                      type="radio"
+                      name="urgency"
+                      value="normal"
+                      checked
+                    />
+                    Normal (within a week)</label
+                  >
+                  <label class="radio-label"
+                    ><input type="radio" name="urgency" value="soon" /> Soon
+                    (2–3 days)</label
+                  >
+                  <label class="radio-label"
+                    ><input type="radio" name="urgency" value="urgent" /> Urgent
+                    (24 hrs)</label
+                  >
+                </div>
+              </div>
+              <div class="form-group full">
+                <label>Brief Description of Need</label>
+                <textarea
+                  id="p-desc"
+                  placeholder="Please briefly describe your healthcare situation and what support you need..."
+                ></textarea>
+              </div>
+              <div class="form-group full">
+                <label>How did you hear about us?</label>
+                <select id="p-source">
+                  <option value="">Select...</option>
+                  <option>Friend / Family</option>
+                  <option>Doctor / Clinic</option>
+                  <option>Social Media</option>
+                  <option>Newspaper</option>
+                  <option>Government Office</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <div class="checkbox-row">
+                  <input type="checkbox" id="p-consent" /><label for="p-consent"
+                    >I consent to CareConnect storing my information to provide
+                    healthcare support services. My data will not be shared with
+                    third parties without my explicit consent.</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="form-submit">
+              <button class="submit-btn" onclick="submitForm('patient')">
+                Submit Support Request →
+              </button>
+            </div>
+            <div id="success-patient" class="success-banner">
+              <span>✅</span
+              ><span
+                >Thank you! A care coordinator will contact you within 24 hours.
+                Please keep your phone accessible.</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Volunteer Form -->
+        <div id="tab-volunteer" class="tab-panel">
+          <div class="form-card">
+            <div class="form-card-header">
+              <h3>Volunteer Registration</h3>
+              <p>
+                Join 380+ volunteers making healthcare accessible. Share your
+                time and skills to change lives.
+              </p>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label>First Name *</label
+                ><input type="text" id="v-fname" placeholder="Priya" />
+              </div>
+              <div class="form-group">
+                <label>Last Name *</label
+                ><input type="text" id="v-lname" placeholder="Reddy" />
+              </div>
+              <div class="form-group">
+                <label>Email *</label
+                ><input
+                  type="email"
+                  id="v-email"
+                  placeholder="priya@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label>Phone *</label
+                ><input type="tel" id="v-phone" placeholder="+91 91234 56789" />
+              </div>
+              <div class="form-group">
+                <label>City / District *</label
+                ><input type="text" id="v-city" placeholder="Hyderabad" />
+              </div>
+              <div class="form-group">
+                <label>Qualification</label
+                ><input
+                  type="text"
+                  id="v-qual"
+                  placeholder="MBBS, BSc Nursing, MSW..."
+                />
+              </div>
+              <div class="form-group full">
+                <label>Your Skills / Role *</label>
+                <select id="v-skills">
+                  <option value="">Select your role...</option>
+                  <option>Medical Doctor / Physician</option>
+                  <option>Nurse / Paramedic</option>
+                  <option>Pharmacist</option>
+                  <option>Counselor / Psychologist</option>
+                  <option>Social Worker</option>
+                  <option>Driver / Transport Aid</option>
+                  <option>Administrative Support</option>
+                  <option>IT / Tech Support</option>
+                  <option>Fundraising / Outreach</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Availability (Hours/week) *</label>
+                <select id="v-hours">
+                  <option>1–3 hours</option>
+                  <option>4–8 hours</option>
+                  <option>8–15 hours</option>
+                  <option>15+ hours</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Preferred Days</label>
+                <select id="v-days">
+                  <option>Weekdays only</option>
+                  <option>Weekends only</option>
+                  <option>Both weekdays & weekends</option>
+                  <option>Flexible</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label>Languages Spoken *</label>
+                <input
+                  type="text"
+                  id="v-lang"
+                  placeholder="Telugu, Hindi, English, Urdu..."
+                />
+              </div>
+              <div class="form-group full">
+                <label>Years of Experience</label>
+                <select id="v-exp">
+                  <option>Less than 1 year</option>
+                  <option>1–3 years</option>
+                  <option>3–5 years</option>
+                  <option>5–10 years</option>
+                  <option>10+ years</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label>Why do you want to volunteer?</label>
+                <textarea
+                  id="v-motivation"
+                  placeholder="Tell us what motivates you to volunteer with CareConnect..."
+                ></textarea>
+              </div>
+              <div class="form-group full">
+                <label>Emergency Contact Name</label>
+                <input
+                  type="text"
+                  id="v-ec-name"
+                  placeholder="Contact person's name"
+                />
+              </div>
+              <div class="form-group full">
+                <label>Emergency Contact Phone</label>
+                <input type="tel" id="v-ec-phone" placeholder="+91 ..." />
+              </div>
+              <div class="form-group full">
+                <div class="checkbox-row">
+                  <input type="checkbox" id="v-bg" /><label for="v-bg"
+                    >I am willing to undergo a background verification
+                    check.</label
+                  >
+                </div>
+              </div>
+              <div class="form-group full">
+                <div class="checkbox-row">
+                  <input type="checkbox" id="v-consent" /><label for="v-consent"
+                    >I agree to the CareConnect Volunteer Code of Conduct and
+                    Terms of Service.</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="form-submit">
+              <button class="submit-btn" onclick="submitForm('volunteer')">
+                Register as Volunteer →
+              </button>
+            </div>
+            <div id="success-volunteer" class="success-banner">
+              <span>✅</span
+              ><span
+                >Welcome aboard! Our volunteer coordinator will reach out within
+                48 hours with your onboarding details.</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Clinic / Partner Form -->
+        <div id="tab-clinic" class="tab-panel">
+          <div class="form-card">
+            <div class="form-card-header">
+              <h3>Clinic / Partner Registration</h3>
+              <p>
+                Partner with us to expand healthcare reach. We are open to
+                hospitals, diagnostic centres, pharmacies, and NGOs.
+              </p>
+            </div>
+            <div class="form-grid">
+              <div class="form-group full">
+                <label>Organisation / Clinic Name *</label
+                ><input
+                  type="text"
+                  id="cl-name"
+                  placeholder="Sunshine Medical Centre"
+                />
+              </div>
+              <div class="form-group">
+                <label>Contact Person *</label
+                ><input
+                  type="text"
+                  id="cl-person"
+                  placeholder="Dr. Meena Rao"
+                />
+              </div>
+              <div class="form-group">
+                <label>Designation</label
+                ><input
+                  type="text"
+                  id="cl-desg"
+                  placeholder="Director / Manager"
+                />
+              </div>
+              <div class="form-group">
+                <label>Phone *</label
+                ><input
+                  type="tel"
+                  id="cl-phone"
+                  placeholder="+91 40 1234 5678"
+                />
+              </div>
+              <div class="form-group">
+                <label>Email *</label
+                ><input
+                  type="email"
+                  id="cl-email"
+                  placeholder="info@sunshinemedical.in"
+                />
+              </div>
+              <div class="form-group full">
+                <label>Full Address *</label
+                ><textarea
+                  id="cl-addr"
+                  style="min-height: 70px"
+                  placeholder="Street, Area, City, Pincode"
+                ></textarea>
+              </div>
+              <div class="form-group full">
+                <label>Type of Organisation *</label>
+                <select id="cl-type">
+                  <option value="">Select...</option>
+                  <option>Government Hospital</option>
+                  <option>Private Hospital</option>
+                  <option>Diagnostic / Lab Centre</option>
+                  <option>Pharmacy / Medical Store</option>
+                  <option>NGO / Trust</option>
+                  <option>Speciality Clinic</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label>Services You Can Offer to CareConnect Patients</label>
+                <textarea
+                  id="cl-services"
+                  placeholder="E.g., free OPD slots on Saturdays, discounted medicines, free diagnostics for BPL patients..."
+                ></textarea>
+              </div>
+              <div class="form-group full">
+                <div class="checkbox-row">
+                  <input type="checkbox" id="cl-consent" /><label
+                    for="cl-consent"
+                    >I confirm that my organisation agrees to CareConnect's
+                    partnership guidelines and data sharing terms.</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="form-submit">
+              <button class="submit-btn" onclick="submitForm('clinic')">
+                Submit Partnership Request →
+              </button>
+            </div>
+            <div id="success-clinic" class="success-banner">
+              <span>✅</span
+              ><span
+                >Partnership request received! Our team will review and respond
+                within 3 business days.</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div id="tab-contact" class="tab-panel">
+          <div class="form-card">
+            <div class="form-card-header">
+              <h3>Contact Our Team</h3>
+              <p>
+                Questions, partnerships, donations, feedback — we'd love to hear
+                from you.
+              </p>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Full Name *</label
+                ><input type="text" id="c-name" placeholder="Your Name" />
+              </div>
+              <div class="form-group">
+                <label>Organisation</label
+                ><input
+                  type="text"
+                  id="c-org"
+                  placeholder="Your Organisation (optional)"
+                />
+              </div>
+              <div class="form-group">
+                <label>Email *</label
+                ><input
+                  type="email"
+                  id="c-email"
+                  placeholder="you@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label>Phone</label
+                ><input type="tel" id="c-phone" placeholder="+91 ..." />
+              </div>
+              <div class="form-group full">
+                <label>Subject *</label>
+                <select id="c-subject">
+                  <option>General Inquiry</option>
+                  <option>Partnership Opportunity</option>
+                  <option>Donation / CSR</option>
+                  <option>Feedback</option>
+                  <option>Media / Press</option>
+                  <option>Complaint</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label>Message *</label>
+                <textarea
+                  id="c-msg"
+                  style="min-height: 120px"
+                  placeholder="Write your message here..."
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-submit">
+              <button class="submit-btn" onclick="submitForm('contact')">
+                Send Message →
+              </button>
+            </div>
+            <div id="success-contact" class="success-banner">
+              <span>✅</span
+              ><span
+                >Message received! We'll reply within 2 business days.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ AI CHAT ══════════════ -->
+    <section id="ai-chat" class="how-section">
+      <div class="container">
+        <div class="chat-wrapper">
+          <div class="chat-info">
+            <div class="section-tag light">AI Powered</div>
+            <h2>Meet Your<br /><em>Health Assistant</em></h2>
+            <p>
+              Ask anything about our services, health questions, or how to get
+              support. Available 24/7 instantly.
+            </p>
+            <div class="chat-features">
+              <div class="chat-feat"><span>⚡</span> Instant responses</div>
+              <div class="chat-feat"><span>🔒</span> Private & secure</div>
+              <div class="chat-feat"><span>🌐</span> Multilingual support</div>
+              <div class="chat-feat"><span>🕐</span> Available 24/7</div>
+            </div>
+            <div class="quick-chips">
+              <div class="chip" onclick="sendChip(this)">
+                How do I register as a volunteer?
+              </div>
+              <div class="chip" onclick="sendChip(this)">
+                What patient services are available?
+              </div>
+              <div class="chip" onclick="sendChip(this)">
+                How can I donate to CareConnect?
+              </div>
+              <div class="chip" onclick="sendChip(this)">
+                I need urgent medical help
+              </div>
+              <div class="chip" onclick="sendChip(this)">
+                Mental health resources
+              </div>
+              <div class="chip" onclick="sendChip(this)">
+                Is medication support free?
+              </div>
+            </div>
+          </div>
+          <div class="chat-box">
+            <div class="chat-box-header">
+              <div class="chat-avatar-wrap">
+                <div class="chat-avatar">🌿</div>
+                <div class="online-dot"></div>
+              </div>
+              <div>
+                <div class="chat-name">CareConnect AI</div>
+                <div class="chat-status">
+                  Online · Typically replies instantly
+                </div>
+              </div>
+            </div>
+            <div class="chat-window" id="chatWindow">
+              <div class="msg bot">
+                <div class="msg-avatar">🌿</div>
+                <div class="msg-bubble">
+                  Hello! I'm CareConnect's AI health assistant. I can help you
+                  with information about our services, patient support,
+                  volunteering, or general health guidance.<br /><br />How can I
+                  assist you today?
+                </div>
+              </div>
+            </div>
+            <div class="chat-input-row">
+              <input
+                class="chat-input"
+                id="chatInput"
+                type="text"
+                placeholder="Ask me anything about healthcare support..."
+                onkeydown="if (event.key === 'Enter') sendMessage();"
+              />
+              <button
+                class="chat-send"
+                onclick="sendMessage()"
+                aria-label="Send"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ ABOUT / WHY ══════════════ -->
+    <section id="about" class="how-section">
+      <div class="container">
+        <div class="section-header light">
+          <div class="section-tag light">Our Mission</div>
+          <h2>Why CareConnect?</h2>
+          <p>
+            Built specifically for under-resourced communities that need
+            healthcare access the most.
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon">🩺</div>
+            <h3>Patient-First Approach</h3>
+            <p>
+              Simple, compassionate support pathways without medical jargon.
+              Every patient is assigned a personal care coordinator.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">🤖</div>
+            <h3>AI-Powered Assistant</h3>
+            <p>
+              Instant answers to common queries, freeing care teams to focus on
+              complex, critical cases that need human attention.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">📊</div>
+            <h3>Smart Coordination</h3>
+            <p>
+              Submission data is categorised and routed intelligently, giving
+              coordinators instant visibility into what is needed.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">🌐</div>
+            <h3>Multilingual</h3>
+            <p>
+              Our team and AI assistant support Telugu, Hindi, Urdu, and English
+              — serving Hyderabad's diverse communities.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">🔒</div>
+            <h3>Privacy & Trust</h3>
+            <p>
+              All patient data is stored securely and never sold or shared with
+              third parties. Your trust is our foundation.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">🤝</div>
+            <h3>Community Driven</h3>
+            <p>
+              Owned and operated by the community. Our volunteers, advisors, and
+              donors are all local to Hyderabad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ PARTNERS ══════════════ -->
+    <section class="partners-section section-white">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Our Network</div>
+          <h2>Partner Organisations</h2>
+        </div>
+        <div class="partners-grid">
+          <div class="partner-badge">🏥 Yashoda Hospitals</div>
+          <div class="partner-badge">💊 MedPlus Pharmacy</div>
+          <div class="partner-badge">🧠 iCall Mental Health</div>
+          <div class="partner-badge">🏛️ Telangana Health Dept.</div>
+          <div class="partner-badge">🚑 EMRI 108</div>
+          <div class="partner-badge">🔬 Vijaya Diagnostics</div>
+          <div class="partner-badge">❤️ HelpAge India</div>
+          <div class="partner-badge">🏫 Gandhi Medical College</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ CONTACT SECTION ══════════════ -->
+    <section id="contact-sec" class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="section-tag light">Get In Touch</div>
+            <h2>We're Here<br />to <em>Help</em></h2>
+            <p>
+              Reach out through any of the following channels. Our team is
+              available Monday–Saturday, 9 AM–7 PM.
+            </p>
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                  <strong>Phone</strong>
+                  <div>+91 40 2345 6789</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div>
+                  <strong>Email</strong>
+                  <div>hello@careconnect.org.in</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <strong>Address</strong>
+                  <div>
+                    CareConnect Trust, 4th Floor, Wellness Plaza, Banjara Hills,
+                    Hyderabad – 500034
+                  </div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">🕐</div>
+                <div>
+                  <strong>Office Hours</strong>
+                  <div>Mon–Sat: 9:00 AM – 7:00 PM<br />Helpline: 24/7</div>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a class="social-btn" href="#">𝕏 Twitter</a>
+              <a class="social-btn" href="#">f Facebook</a>
+              <a class="social-btn" href="#">in LinkedIn</a>
+              <a class="social-btn" href="#">▶ YouTube</a>
+            </div>
+          </div>
+          <div class="contact-map-placeholder">
+            <div class="map-mock">
+              <div class="map-pin">📍</div>
+              <p>CareConnect Office<br />Banjara Hills, Hyderabad</p>
+              <a href="https://maps.google.com" target="_blank" class="map-link"
+                >Open in Google Maps →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ FOOTER ══════════════ -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="pulse-dot"></div>
+            CareConnect
+          </div>
+          <p>
+            Making healthcare accessible for every community across Hyderabad
+            and beyond.
+          </p>
+        </div>
+        <div class="footer-links-group">
+          <strong>Services</strong>
+          <a href="#services">Medical Consultation</a>
+          <a href="#services">Medication Assistance</a>
+          <a href="#services">Mental Health</a>
+          <a href="#services">Transport Aid</a>
+          <a href="#services">Home Care</a>
+        </div>
+        <div class="footer-links-group">
+          <strong>Get Involved</strong>
+          <a href="#register">Patient Support</a>
+          <a href="#register">Volunteer</a>
+          <a href="#register">Partner with Us</a>
+          <a href="#register">Donate</a>
+        </div>
+        <div class="footer-links-group">
+          <strong>Organisation</strong>
+          <a href="#about">About Us</a>
+          <a href="#impact">Our Impact</a>
+          <a href="#contact-sec">Contact</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span
+          >© 2025 CareConnect Trust. Registered NGO under the Telangana
+          Societies Act.</span
+        >
+        <span>Built with ❤️ for accessible healthcare · Hyderabad, India</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
