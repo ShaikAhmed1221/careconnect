@@ -8,7 +8,6 @@ CareConnect is a simple web application designed to help NGOs connect patients, 
 
 - 🧑‍⚕️ Allows patients to request healthcare support
 - 🤝 Enables volunteers to register and help
-- 🏥 Connects clinics and partners
 - 💬 Provides instant guidance using an AI chatbot
 
 ---
@@ -28,7 +27,7 @@ The app includes an AI assistant powered by :contentReference[oaicite:0]{index=0
 
 ## 🚀 Live Demo
 
-[Add your deployed link here]
+https://careconnect-ecru.vercel.app/
 
 
 ---
